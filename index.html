@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oleo+Script+Swash+Caps&family=Smooch&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oleo+Script+Swash+Caps&family=Permanent+Marker&family=Smooch&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+    <body>
+       <nav id="mainnavbar"class="navbar navbar-dark navbar-expand-md py-0 sticky-top">
+        <div class="navbar-brand">GARAGE GOALS</div>
+        <button class="navbar-toggler" data-toggle="collapse" data-target="#navLinks" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navLinks">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a href="" class="nav-link">Home</a>
+                </li>
+                <li class="nav-items">
+                    <a href="" class="nav-link">About</a>
+                </li>
+                <li class="nav-items">
+                    <a href="" class="nav-link">Tickets</a>
+                </li>
+            </ul>
+        </div>
+       </nav>
+       <section class="container-fluid px-0">
+            <div class="row align-items-center">
+                <div id="headinggroup"class="col-lg-6 text-white text-center d-none d-lg-block ">
+                    <div class="display-2"><span>/</span>HARLEY DAVIDSON<span>/</span></div>
+                    <div class="display-2"><span>/</span>STREETFIGHTER<span>/</span></div>
+                    <div class="display-2"><span>/</span>975<span>/</span></div>
+                </div>
+                <div class="col-lg-6">
+                    <img class="img-fluid"src="images/photo1.jpg" alt="">
+                </div>
+            </div>
+       </section>
+       <section class="container-fluid px-0">
+        <div class="row align-items-center indus">
+            <div class="col-md-6 order-2 order-md-1">
+                <img class="img-fluid"src="images/engine.jpg" alt="">
+            </div>
+            <div id="headinggroup"class="col-md-6 text-white text-center order-1 order-md-2">
+                <div class="display-2"><span>/</span>V-Twin Engine<span>/</span></div>
+                <div class="display-2"><span>/</span>6-Speed<span>/</span></div>
+                <div class="display-2"><span>/</span>975cc<span>/</span></div>
+            </div>
+        </div>
+   </section>
+       <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+
+    <script>
+        $(function () {
+            $(document).scroll(function () {
+                var $nav = $("#mainNavbar");
+                $nav.toggleClass("scrolled", $(this).scrollTop() > $nav.height());
+            });
+        });
+    </script>
+    </body>
+</html>
